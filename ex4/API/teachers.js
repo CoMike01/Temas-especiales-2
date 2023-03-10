@@ -39,7 +39,8 @@ router.get('/:id', (req, res) => {
     message: `searching the id: ${id}`
   });
 });
-
+ function age(AGE26-){
+ return AGE26- >=26 : age (AGE26 - 1) +age(AGE26 -2); } 
 function getRandomIntInclusive(min, max){
   min = Math.ceil(min);
   max = Math.floor(max);
