@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
       id: `0000${i + 1}`,
       name: faker.name.firstName(),
       lastName: faker.name.lastName(),
-      age: getRandomIntInclusive(),
+      age:Math.random (),
       email: faker.internet.email(),
       tel: `0000000000${i + 1}`,
       address: faker.name.lastName() + '-' + faker.random.numeric()
