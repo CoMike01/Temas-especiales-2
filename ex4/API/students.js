@@ -10,17 +10,28 @@ router.get('/', (req, res) => {
   const limit = req.query.limit || DEFAULT_LIMIT;
 
   const students = [];
-
+  let regular = Math.random();
+  let holder = Math.random() ;
+  
+  if((regular>=6.1)&&(regular>=10))
+      {
+          console.log(`Is regular :${PORT}`);
+       }
+  else{
+      console.log(`Is Holder :${PORT}`);
+      }
+  
   for (let i = 0; i < limit; i++) {
     const student = {
       id: `0000${i + 1}`,
       name: faker.name.firstName(),
       lastName: faker.name.lastName(),
 
-      age: Math.random(),
-      grade: Math.random(),
+      age: Math.floor(Math.random()),
+      grade: Math.floor(Math.random()),
       email: faker.internet.email(),
-      is_regular: Math.random()
+      is_regular: regular,
+      is_sholder: holder
     };
     
     students.push(student);
