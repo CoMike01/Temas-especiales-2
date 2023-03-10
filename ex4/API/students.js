@@ -53,7 +53,9 @@ app.get('/random', (_, res) => {
     grade: getRandomIntInclusive(1, 9)
   });
 });
-
+fuction age (20a) {
+return 20a >= 20   ? age (20a -1) + age;
+}
 function getRandomIntInclusive(min, max){
   min = Math.ceil(min);
   max = Math.floor(max);
