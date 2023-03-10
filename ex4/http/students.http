@@ -1,6 +1,6 @@
 GET http://localhost:3000/students?limit=5 HTTP/1.1
 GET http://localhost:3000/studentsRegular HTTP/1.1
-GET http://localhost;3000/students/age/20a
+GET http://localhost;3000/students/20a HTTP/1.1
 
 GET http://localhost:3000/teachers?limit=10 HTTP/1.1
-GET http://localhost:3000/teachers/26-28 HTTP/1.1
+GET http://localhost:3000/teachers/AGE26-28 HTTP/1.1
